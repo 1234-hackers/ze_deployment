@@ -1,6 +1,5 @@
 import base64
-from email import message
-from turtle import st
+from email import message
 from dns.message import Message
 from flask import Flask, render_template, url_for, request, redirect,flash,session
 from flask.scaffold import F
@@ -18,22 +17,15 @@ import socket,os
 from functools import wraps
 from gridfs import*
 from bson import ObjectId
-#from flask_hcaptcha import hCaptcha
-from flask_wtf import RecaptchaField,FlaskForm
-from wtforms import *
-from wtforms.validators import EqualTo, InputRequired
+#from flask_hcaptcha import hCaptcha
 from flask_wtf.csrf import CSRFProtect,CSRFError
 from wtforms.csrf.session import SessionCSRF 
 from datetime import timedelta
 import email_validator 
 import random
-#from flask_mail import Mail,Message
-import base64
+#from flask_mail import Mail,Message
 from bson.binary import Binary
-from werkzeug.utils import secure_filename
-import pyshorteners
-import PIL
-from PIL import Image
+from werkzeug.utils import secure_filename
 import asyncio
 import markupsafe
 from markupsafe import escape , Markup
